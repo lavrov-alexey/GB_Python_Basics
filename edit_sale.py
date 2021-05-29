@@ -59,7 +59,7 @@ def edit_sale(num_rec, sum_rec):
             print(f"Новое значение суммы продажи: {sum_rec}, "
                   f"старое: {old_sale.strip()}")
         else:
-            print(f"Записи с номером {num_rec} нет в файле данных {DATA_FILE}")
+            print(f"Записи с номером {num_re1c} нет в файле данных {DATA_FILE}")
             exit(2)
 
 
@@ -77,10 +77,13 @@ def valid_edit_pars(params):
         # проверяем переданные параметры
         try:
             _cnt_rec = int(params[1])
+        except ValueError:  # ловим не int
+            return False
+        try:
             _new_sum = Decimal(params[2])
-            return True
         except InvalidOperation:  # ловим не decimal
             return False
+        return True
     return False
 
 
