@@ -1,0 +1,13 @@
+{'my_project': {'authapp': {'__init__.py': 'file',
+                            'models.py': 'file',
+                            'templates': {'authapp': {'base.html': 'file',
+                                                      'index.html': 'file'}},
+                            'views.py': 'file'},
+                'mainapp': {'__init__.py': 'file',
+                            'models.py': 'file',
+                            'templates': {'mainapp': {'base.html': 'file',
+                                                      'index.html': 'file'}},
+                            'views.py': 'file'},
+                'settings': {'__init__.py': 'file',
+                             'dev.py': 'file',
+                             'prod.py': 'file'}}}
